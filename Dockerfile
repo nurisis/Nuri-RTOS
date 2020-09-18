@@ -15,18 +15,3 @@ RUN apt-get install -y nano
 RUN apt-get install -y gcc-arm-none-eabi
 # install QEMU emulator
 RUN apt-get install -y qemu-system-arm
-
-#
-#RUN chmod +x ./wait-for-it.sh
-## # aws cli 설치
-#RUN apt-get update && apt-get install awscli -y
-#
-#COPY ./django-dashboard/manage.py ./django-dashboard/gunicorn-cfg.py ./django-dashboard/requirements.txt /crawler-app/django-dashboard/
-#
-#WORKDIR /crawler-app/django-dashboard
-#
-## 가상환경(virtualenv)과 django 설치
-#RUN pip install virtualenv && virtualenv /crawler-app/django-dashboard/live-venv
-## RUN pip install -r requirements.txt
-#
-#EXPOSE 3000
