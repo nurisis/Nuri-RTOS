@@ -1,0 +1,16 @@
+version: '3.8'
+
+volumes:
+  navilos-ubuntu: {}
+
+services:
+  ubuntu:
+    build: .
+    volumes:
+      - ./:/navilos-app/
+#    command:
+#      - bash
+#      - -c
+#      - |
+#        arm-none-eabi-gcc -v
+#    restart: always
