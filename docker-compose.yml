@@ -4,10 +4,12 @@ volumes:
   navilos-ubuntu: {}
 
 services:
-  ubuntu:
+  navilos:
     build: .
     volumes:
-      - ./:/navilos-app/
+      - ./navilos/:/navilos-app/
+    container_name: navilos-container-0.2
+    tty: true
 #    command:
 #      - bash
 #      - -c

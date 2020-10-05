@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 LABEL maintainer="isoyeong666@gmail.com"
-LABEL version="0.1"
+LABEL version="0.2"
 LABEL description="This is custom Docker Image for the RTOS"
 
 WORKDIR /navilos-app
