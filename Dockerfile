@@ -10,6 +10,7 @@ WORKDIR /navilos-app
 # Update Ubuntu Software repository
 RUN apt-get update
 RUN apt-get install -y nano
+RUN apt-get install -y make
 
 # install gcc compiler
 RUN apt-get install -y gcc-arm-none-eabi
