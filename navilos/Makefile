@@ -1,4 +1,4 @@
-ARCH = armv7-armv7
+ARCH = armv7-a
 MCPU = cortex-a8
 
 CC = arm-none-eabi-gcc
@@ -20,7 +20,7 @@ all: $(navilos)
 
 clean:
 	@rm -fr build
-
+# run qemu
 run: $(navilos)
 	qemu-system-arm -M realview-pb-a8 -kernel $(navilos)
 
